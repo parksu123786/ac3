@@ -18,7 +18,7 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-    # needs: test
+    needs: test #test가 선 실행
     steps:
       - name: Checkout code
         uses: actions/checkout@v7
